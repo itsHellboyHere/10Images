@@ -80,6 +80,10 @@ html {
  --backgroundColor: var(--dark-mode-bg-color) ;
  
 }
+.dark-theme .download-btn{
+  /* background-image: linear-gradient(to right, #ffa500,#ff5e00); */
+  color: var(--dark-mode-text-color);
+}
 body {
   background: var(--backgroundColor);
   color:var(--textColor);
@@ -368,11 +372,7 @@ Search Form
   /* transition: 0.2s all ease-in-out; */
   /* transition: .2s all ease-in; */
 }
-.search-form:hover{
-  transform: scale3d(1.0,1.2,1.2);
 
- 
-}
 .search-input{
   border-color: var(--grey-300);
   transition: var(--darkModeTransition);
@@ -415,6 +415,30 @@ box-shadow: -6px -3px 46px 19px rgba(167,94,108,0.75);
 .image-container .img:hover{
   transform: scale(1.1,1.1);
 
+}
+.download-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #3498db; */
+  color:var(--black);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+}
+.image-overlay {
+  position: relative;
+  display: inline-block;
+  transition: all 0.2s linear;
+}
+
+.download-btn:hover {
+ color: #2980b9; /* Change the color on hover */
+  /* transform: scale(1.2,1.2);  */
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.3)
 }
 
 @media (min-width: 768px) {
